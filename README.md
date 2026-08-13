@@ -45,7 +45,7 @@ radixel-ota/
 ├── index.html                      ← tiny landing page
 ├── README.md                       ← this file
 ├── VERSIONING.md
-├── .github/workflows/static.yml    ← Pages deploy on `release`
+├── .github/workflows/static.yml    ← Pages deploy on `main`
 ├── android/
 │   └── <appVersion>/               ← created by app publish script
 │       ├── manifest.json
@@ -61,7 +61,7 @@ Do **not** commit placeholder manifests with fake bundle URLs — clients may tr
 ## One-time: enable GitHub Pages
 
 1. Repo **Settings → Pages → Source: GitHub Actions**.
-2. Push this repo’s **`release`** branch (workflow trigger). Work on `main`, then merge/push to `release`.
+2. Push **`main`** (this workflow’s trigger).
 3. Wait for the **Deploy static content to Pages** Action.
 4. Confirm `https://ax108.github.io/radixel-ota/` loads.
 
@@ -71,7 +71,7 @@ From [Ax108/radixel](https://github.com/Ax108/radixel) (scripts to be added when
 
 1. Confirm `expo.version` matches the binary’s `runtimeVersion`.
 2. Export stages into this repo under `android/<version>/` and/or `ios/<version>/`.
-3. Commit + push **this** CDN repo, then update **`release`** so Pages deploys.
+3. Commit + push **this** CDN repo’s **`main`** branch so Pages deploys.
 4. Cold-start a matching native build — it checks the baked `updates.url` for that platform/version.
 
 ## Related
