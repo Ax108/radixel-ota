@@ -20,5 +20,4 @@ Radixel OTA uses **path + manifest** versioning:
 | Project | Host | Path |
 | ------- | ---- | ---- |
 | SSA (`ssa-static`) | GitHub Pages | `prod/mobile-app-ota/{platform}/` (overwrite) |
-| Mobeet (`mobile-app-ota`) | Vercel | `{platform}/{version}/` |
 | **Radixel (`radixel-ota`)** | **GitHub Pages** | **`{platform}/{version}/`** |
