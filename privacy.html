@@ -197,9 +197,19 @@
 
       <h3>1.2 App preferences</h3>
       <p>
-        Settings such as theme (light/dark), default word size, default sign
-        mode, and copy format are stored locally on your device. These
-        preferences are used only to configure the App for you.
+        The following settings are stored locally on your device (AsyncStorage)
+        and are used only to configure the App for you:
+      </p>
+      <ul>
+        <li>Theme (light or dark)</li>
+        <li>Default word size on launch (8, 16, 32, or 64 bits)</li>
+        <li>Default sign mode on launch (signed or unsigned)</li>
+        <li>Copy format (raw or prefixed)</li>
+      </ul>
+      <p>
+        These preferences are not uploaded to our servers. On Android, automatic
+        cloud backup for app data is <strong>disabled</strong> so history and
+        settings are not copied into the system backup service.
       </p>
 
       <h3>1.3 Clipboard</h3>
@@ -276,7 +286,11 @@
       <p>
         Radixel does <strong>not</strong> request access to location services,
         the camera, the microphone, contacts, calendar, SMS, phone call logs,
-        Bluetooth, or background sensors.
+        Bluetooth, background sensors, device storage (files/photos), or
+        overlay (“draw over other apps”) permissions. Where the Android build
+        toolchain would otherwise merge legacy storage or overlay permissions,
+        those entries are explicitly <strong>blocked</strong> in the App
+        manifest so they are not granted at install time.
       </p>
 
       <h2>3. Self-hosted over-the-air (OTA) JavaScript updates</h2>
@@ -413,7 +427,8 @@
         <li>
           <strong>History and preferences</strong> remain on your device until
           you use <em>Reset app</em> in Settings, clear app data through your
-          device settings, or uninstall Radixel.
+          device settings, or uninstall Radixel. On Android, Radixel does not
+          opt in to automatic backup of app data to Google’s backup service.
         </li>
         <li>
           <strong>OTA server logs</strong> (if any) are maintained by the
