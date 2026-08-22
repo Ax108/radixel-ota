@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Radixel Privacy Policy — data practices, permissions, and self-hosted OTA update disclosure."
+    />
+    <title>Privacy Policy — Radixel</title>
+    <style>
+      :root {
+        --screen: #14161b;
+        --card: #1c1f26;
+        --border: #262a33;
+        --ink: #eceef1;
+        --muted: #8b92a0;
+        --faint: #4b505c;
+        --teal: #5dcaa5;
+        --danger: #e24b4a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 3rem;
+        color: var(--ink);
+        background: var(--screen);
+        line-height: 1.65;
+      }
+
+      header {
+        margin-bottom: 2rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.35rem;
+        font-weight: 600;
+      }
+
+      .meta {
+        margin: 0.5rem 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      h2 {
+        margin: 1.85rem 0 0.65rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h3 {
+        margin: 1.1rem 0 0.45rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+
+      p,
+      li {
+        color: var(--ink);
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin: 0.35rem 0;
+      }
+
+      code {
+        font-family: ui-monospace, "Cascadia Code", "SF Mono", monospace;
+        font-size: 0.88em;
+        background: var(--card);
+        border: 1px solid var(--border);
+        padding: 0.08em 0.35em;
+        border-radius: 4px;
+      }
+
+      .notice {
+        margin: 1rem 0;
+        padding: 0.85rem 1rem;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        background: var(--card);
+      }
+
+      .notice strong {
+        color: var(--teal);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0.75rem 0 1rem;
+        font-size: 0.92rem;
+      }
+
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 0.55rem 0.45rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      th {
+        color: var(--muted);
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--teal);
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.88rem;
+        color: var(--faint);
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        App: <strong>Radixel</strong> · Publisher:
+        <a href="https://astrax.dev/">AstraX</a><br />
+        Effective date: <time datetime="2026-08-22">22 August 2026</time>
+      </p>
+    </header>
+
+    <main>
+      <p>
+        This Privacy Policy describes how <strong>Radixel</strong> (“the App”),
+        published by
+        <a href="https://astrax.dev/">AstraX</a> (“we”, “us”), handles
+        information when you use our mobile application on iOS and Android. Radixel is an offline-first
+        integer calculator. We designed it to minimize data collection and to
+        keep your calculation history on your device.
+      </p>
+
+      <div class="notice">
+        <strong>Summary:</strong> Radixel does not require an account, does not
+        display ads, does not use analytics or advertising SDKs, and does not
+        sell personal information. The App stores preferences and calculation
+        history locally. The only routine network activity is an optional
+        check for JavaScript updates from our self-hosted CDN when you launch
+        the App while online.
+      </div>
+
+      <h2>1. Information we collect</h2>
+
+      <h3>1.1 Information you provide indirectly through use</h3>
+      <p>
+        Radixel processes calculation expressions, numeric results, and bitwise
+        operations entirely on your device to provide calculator functionality.
+        When you use History, the App saves entries locally, including:
+      </p>
+      <ul>
+        <li>Expression or operation description (for example <code>10 + 1</code> or <code>0x0F AND 0xF0</code>)</li>
+        <li>Result value</li>
+        <li>Category (Calculator or Bitwise)</li>
+        <li>Timestamp</li>
+      </ul>
+      <p>
+        History is stored in on-device storage (AsyncStorage), capped at
+        <strong>300 entries per category</strong> (Calculator and Bitwise) and
+        <strong>600 entries total</strong>. Older entries are removed
+        automatically when the limit is reached. History is not uploaded to our
+        servers.
+      </p>
+
+      <h3>1.2 App preferences</h3>
+      <p>
+        Settings such as theme (light/dark), default word size, default sign
+        mode, and copy format are stored locally on your device. These
+        preferences are used only to configure the App for you.
+      </p>
+
+      <h3>1.3 Clipboard</h3>
+      <p>
+        When you tap a copy control on a base row, Radixel writes the selected
+        value to your device clipboard using the system clipboard API. The App
+        <strong>does not read</strong> clipboard contents. Clipboard access is
+        initiated only by your explicit action.
+      </p>
+
+      <h3>1.4 Information we do not collect</h3>
+      <ul>
+        <li>Name, email address, phone number, or other contact details (no account system)</li>
+        <li>Precise location or coarse location</li>
+        <li>Contacts, photos, camera, microphone, or calendar data</li>
+        <li>Advertising identifiers for tracking or profiling</li>
+        <li>Health, financial, or payment information</li>
+      </ul>
+
+      <h2>2. Permissions and platform disclosures</h2>
+      <p>
+        Radixel requests only the permissions needed for its core features and
+        update mechanism. The table below reflects the App’s intended behavior
+        for store review on iOS and Android.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Permission / capability</th>
+            <th>Platform</th>
+            <th>Why it is used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Internet / network access</strong></td>
+            <td>Android, iOS</td>
+            <td>
+              Required to check for and download JavaScript application updates
+              from our self-hosted Expo Updates CDN (see Section 3). Also used
+              when you choose to open external HTTPS links (for example this
+              Privacy Policy) in your browser.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Local storage on device</strong></td>
+            <td>Android, iOS</td>
+            <td>
+              Stores calculation history and app preferences on your device.
+              No cloud sync.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Clipboard (write)</strong></td>
+            <td>Android, iOS</td>
+            <td>
+              Copies numeric values you select to the system clipboard. The App
+              does not read clipboard data.
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Query URL schemes</strong> (<code>https</code>, <code>http</code>, <code>tel</code>, <code>mailto</code>)</td>
+            <td>Android 11+, iOS</td>
+            <td>
+              Declares which external link types the App may open via the system
+              browser or dialer when you tap a link. Radixel does not collect
+              data through these declarations.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Radixel does <strong>not</strong> request access to location services,
+        the camera, the microphone, contacts, calendar, SMS, phone call logs,
+        Bluetooth, or background sensors.
+      </p>
+
+      <h2>3. Self-hosted over-the-air (OTA) JavaScript updates</h2>
+      <p>
+        Radixel includes a <strong>custom, self-hosted over-the-air update
+        mechanism</strong> built on
+        <a href="https://docs.expo.dev/versions/latest/sdk/updates/">Expo Updates</a>
+        (<code>expo-updates</code>). This disclosure is provided for Apple App
+        Store and Google Play policy compliance and for transparency.
+      </p>
+
+      <h3>3.1 What OTA is used for</h3>
+      <ul>
+        <li>
+          Delivering <strong>JavaScript and asset bundle updates</strong> (UI
+          and application logic) after a store binary has been installed.
+        </li>
+        <li>
+          Fixing bugs and shipping minor improvements without requiring an
+          immediate store release, within the same app version line.
+        </li>
+        <li>
+          OTA updates do <strong>not</strong> replace the native app binary from
+          the App Store or Google Play. Changes that require new native code,
+          new permissions, or a new store listing still require a store update.
+        </li>
+      </ul>
+
+      <h3>3.2 What OTA is not</h3>
+      <ul>
+        <li>
+          Radixel does <strong>not</strong> use Expo Application Services (EAS)
+          Update or Expo’s commercial update hosting.
+        </li>
+        <li>
+          OTA is not used to download executable native code outside the store
+          distribution model.
+        </li>
+        <li>
+          OTA is not used to collect personal information or to track users
+          across apps or websites.
+        </li>
+      </ul>
+
+      <h3>3.3 How updates are hosted and delivered</h3>
+      <p>
+        Update manifests and bundles are published to a static content delivery
+        endpoint on <strong>GitHub Pages</strong>, operated under the
+        <code>radixel-ota</code> repository:
+      </p>
+      <ul>
+        <li>
+          CDN base URL:
+          <code>https://ax108.github.io/radixel-ota/</code>
+        </li>
+        <li>
+          Each installed native build is configured at build time with a
+          platform-specific manifest URL of the form:<br />
+          <code>…/android/&lt;appVersion&gt;/manifest.json</code> or<br />
+          <code>…/ios/&lt;appVersion&gt;/manifest.json</code>
+        </li>
+        <li>
+          <strong>Runtime version</strong> is tied to the app version
+          (<code>runtimeVersion.policy: appVersion</code>). A device only
+          receives bundles published for its installed app version.
+        </li>
+        <li>
+          On launch, when updates are enabled, the App checks for a newer
+          JavaScript bundle (<code>checkAutomatically: ON_LOAD</code>). If a
+          update is available, it is downloaded and applied on the next cold
+          start (or immediately when configured to reload).
+        </li>
+      </ul>
+
+      <h3>3.4 Data transmitted during OTA checks</h3>
+      <p>
+        When the App contacts the update CDN, standard HTTP(S) requests are
+        made to fetch a manifest and, if needed, bundle and asset files.
+        Typical request metadata may include:
+      </p>
+      <ul>
+        <li>App platform (Android or iOS)</li>
+        <li>Installed runtime / app version</li>
+        <li>Standard network information handled by the hosting provider (for example IP address, user agent, timestamps in server logs)</li>
+      </ul>
+      <p>
+        These requests do <strong>not</strong> include your calculation
+        history, expressions, clipboard contents, or account identifiers
+        (Radixel has no accounts). We do not use OTA traffic for advertising or
+        cross-app tracking.
+      </p>
+
+      <h3>3.5 Integrity and control</h3>
+      <p>
+        Expo Updates verifies update manifests according to the Expo Updates
+        protocol and the signing configuration baked into the native build.
+        You may continue using Radixel offline; update checks occur only when
+        the App can reach the CDN. If an update check fails, the App continues
+        with the last successfully loaded bundle.
+      </p>
+
+      <h2>4. How we use information</h2>
+      <p>Information processed by Radixel is used only to:</p>
+      <ul>
+        <li>Perform calculations and bitwise operations you request</li>
+        <li>Display values in multiple numeric bases</li>
+        <li>Store local history and preferences on your device</li>
+        <li>Copy values to the clipboard when you ask</li>
+        <li>Check for and apply authorized JavaScript updates from our CDN</li>
+      </ul>
+      <p>We do not use your data for advertising, profiling, or sale.</p>
+
+      <h2>5. Sharing and third parties</h2>
+      <p>
+        Radixel does not share personal information with data brokers or
+        advertising networks. Limited interaction with third-party
+        infrastructure occurs only as follows:
+      </p>
+      <ul>
+        <li>
+          <strong>GitHub Pages</strong> — hosts OTA update manifests/bundles and
+          this policy page. Subject to GitHub’s infrastructure and privacy
+          practices for static hosting.
+        </li>
+        <li>
+          <strong>Apple App Store / Google Play</strong> — distribute the native
+          application. Store platforms may process information according to
+          their own policies when you download or update the App.
+        </li>
+      </ul>
+
+      <h2>6. Data retention and deletion</h2>
+      <ul>
+        <li>
+          <strong>History and preferences</strong> remain on your device until
+          you use <em>Reset app</em> in Settings, clear app data through your
+          device settings, or uninstall Radixel.
+        </li>
+        <li>
+          <strong>OTA server logs</strong> (if any) are maintained by the
+          hosting provider under their standard retention practices. OTA
+          requests do not include calculation content.
+        </li>
+      </ul>
+
+      <h2>7. Children’s privacy</h2>
+      <p>
+        Radixel is a general-purpose utility and is not directed at children
+        under 13 years of age. We do not knowingly collect personal information
+        from children. If you believe a child has provided personal information
+        through the App, contact us at
+        <a href="mailto:hello@astrax.dev">hello@astrax.dev</a> and we will
+        assist with deletion of local data on the device.
+      </p>
+
+      <h2>8. Security</h2>
+      <p>
+        Calculation history and preferences are stored locally using the
+        platform’s app sandbox. OTA bundles are delivered over HTTPS. No
+        method of storage or transmission is completely secure; we encourage
+        you to use device lock screens and to reset the App if you share your
+        device with others and wish to clear history.
+      </p>
+
+      <h2>9. International users</h2>
+      <p>
+        Radixel is operated by
+        <a href="https://astrax.dev/">AstraX</a>. If you use the App outside
+        your home country, your device may still connect to our update CDN and
+        app store distribution services as described above.
+      </p>
+
+      <h2>10. Your choices</h2>
+      <ul>
+        <li>Use Radixel offline to avoid OTA update checks (the App remains functional).</li>
+        <li>Clear history and preferences via <em>Reset app</em> in Settings.</li>
+        <li>Uninstall the App to remove locally stored data from your device.</li>
+        <li>Disable automatic updates at the operating-system level if you prefer to control network access globally.</li>
+      </ul>
+
+      <h2>11. Changes to this policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. The effective date
+        at the top of this page will change when we do. Material changes may
+        also be noted in App Store or Google Play release notes. Continued use
+        of Radixel after an update constitutes acceptance of the revised
+        policy.
+      </p>
+
+      <h2>12. Contact</h2>
+      <p>
+        For privacy questions, support, or data-related requests regarding
+        Radixel, contact AstraX:
+      </p>
+      <ul>
+        <li>
+          Website:
+          <a href="https://astrax.dev/">https://astrax.dev/</a>
+        </li>
+        <li>
+          Email:
+          <a href="mailto:hello@astrax.dev">hello@astrax.dev</a>
+        </li>
+        <li>
+          WhatsApp:
+          <a href="https://wa.me/message/XA6OOWKHKDDSJ1">Message AstraX</a>
+        </li>
+        <li>
+          GitHub (bug reports):
+          <a href="https://github.com/Ax108/radixel/issues">github.com/Ax108/radixel/issues</a>
+        </li>
+      </ul>
+      <p>
+        Android application ID: <code>com.astrax.radixel</code><br />
+        iOS bundle identifier: <code>com.astrax.radixel</code>
+      </p>
+    </main>
+
+    <footer>
+      <div>Radixel v1.0.0 · By AstraX</div>
+      <nav class="nav-links" aria-label="Related pages">
+        <a href="https://astrax.dev/">AstraX</a>
+        <a href="./about.html">About Radixel</a>
+        <a href="./index.html">OTA CDN home</a>
+        <a href="https://github.com/Ax108/radixel-ota">OTA repository</a>
+      </nav>
+    </footer>
+  </body>
+</html>

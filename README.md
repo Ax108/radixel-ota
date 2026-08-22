@@ -65,12 +65,12 @@ Do **not** commit placeholder manifests with fake bundle URLs — clients may tr
 3. Wait for the **Deploy static content to Pages** Action.
 4. Confirm `https://ax108.github.io/radixel-ota/` loads.
 
-## Publish flow (from the app later)
+## Publish flow
 
-From [Ax108/radixel](https://github.com/Ax108/radixel) (scripts to be added when OTA is wired in the app):
+From [Ax108/radixel](https://github.com/Ax108/radixel):
 
 1. Confirm `expo.version` matches the binary’s `runtimeVersion`.
-2. Export stages into this repo under `android/<version>/` and/or `ios/<version>/`.
+2. Run `bun run ota:export:android` and/or `bun run ota:export:ios` (stages into this repo).
 3. Commit + push **this** CDN repo’s **`main`** branch so Pages deploys.
 4. Cold-start a matching native build — it checks the baked `updates.url` for that platform/version.
 

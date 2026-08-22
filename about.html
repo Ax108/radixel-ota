@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Radixel — integer calculator with live base conversion and a bitwise editor, by AstraX."
+    />
+    <title>About — Radixel</title>
+    <style>
+      :root {
+        --screen: #14161b;
+        --card: #1c1f26;
+        --border: #262a33;
+        --ink: #eceef1;
+        --muted: #8b92a0;
+        --faint: #4b505c;
+        --teal: #5dcaa5;
+        --purple: #afa9ec;
+        --coral: #f0997b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 3rem;
+        color: var(--ink);
+        background: var(--screen);
+        line-height: 1.65;
+      }
+
+      header {
+        margin-bottom: 2rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .brand {
+        display: flex;
+        align-items: baseline;
+        gap: 0.45rem;
+        margin-bottom: 0.35rem;
+      }
+
+      .prefix {
+        font-family: ui-monospace, "Cascadia Code", "SF Mono", monospace;
+        color: var(--coral);
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.35rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .tagline {
+        margin: 0.5rem 0 0;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      h2 {
+        margin: 1.75rem 0 0.65rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      p,
+      li {
+        color: var(--ink);
+      }
+
+      p.lead {
+        font-size: 1.05rem;
+        color: var(--ink);
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      li {
+        margin: 0.35rem 0;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin: 0.75rem 0 0;
+      }
+
+      .pill {
+        font-family: ui-monospace, monospace;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        padding: 0.28rem 0.55rem;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        background: var(--card);
+      }
+
+      .pill.dec {
+        color: var(--muted);
+      }
+      .pill.bin {
+        color: var(--teal);
+      }
+      .pill.oct {
+        color: var(--purple);
+      }
+      .pill.hex {
+        color: var(--coral);
+      }
+
+      a {
+        color: var(--teal);
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.88rem;
+        color: var(--faint);
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span class="prefix">0x</span>
+        <h1>Radixel</h1>
+      </div>
+      <p class="tagline">Integer calculator · live base conversion · bitwise editor</p>
+    </header>
+
+    <main>
+      <p class="lead">
+        <strong>Radixel</strong> is a mobile calculator built for programmers,
+        students, and anyone who works with integers across number bases. It
+        combines a full expression calculator with a dedicated bitwise editing
+        mode — both operating on the same underlying value.
+      </p>
+
+      <h2>What Radixel does</h2>
+      <p>
+        Radixel helps you evaluate integer arithmetic, inspect values in
+        decimal, binary, octal, and hexadecimal at the same time, and perform
+        word-sized bitwise operations with clear overflow feedback. All
+        calculations stay on your device. Radixel does not require an account,
+        does not show advertisements, and does not sell personal data.
+      </p>
+
+      <h2>Calculator tab</h2>
+      <ul>
+        <li>
+          Enter expressions with digits, operators (<code>+ − × ÷</code>),
+          and parentheses.
+        </li>
+        <li>
+          View the live result in four bases at once:
+          <span class="pill-row" aria-hidden="true">
+            <span class="pill dec">DEC</span>
+            <span class="pill bin">BIN</span>
+            <span class="pill oct">OCT</span>
+            <span class="pill hex">HEX</span>
+          </span>
+        </li>
+        <li>
+          Select an input base so the keypad accepts the correct digit set (for
+          example, hex letters <code>A–F</code> when HEX is active).
+        </li>
+        <li>
+          Use <code>Ans</code> to insert the last evaluated result, and
+          <code>=</code> to evaluate with standard operator precedence.
+        </li>
+        <li>
+          Copy any base row to the clipboard in raw or prefixed format (for
+          example <code>0x6F</code>, <code>0b01101111</code>).
+        </li>
+        <li>
+          Integer-only by design — fixed word-size semantics apply across all
+          bases.
+        </li>
+      </ul>
+
+      <h2>Bitwise tab</h2>
+      <ul>
+        <li>
+          Configure word size (8, 16, 32, or 64 bits) and signed/unsigned
+          interpretation.
+        </li>
+        <li>
+          Edit individual bits in a visual grid, or enter values directly on a
+          hex keypad.
+        </li>
+        <li>
+          Apply bitwise operations: <code>AND</code>, <code>OR</code>,
+          <code>XOR</code>, <code>NOT</code>, shifts (<code>&lt;&lt;1</code>,
+          <code>&gt;&gt;1</code>), and two's-complement negate.
+        </li>
+        <li>
+          Share the same <code>value</code> with the Calculator tab — changes
+          in either tab are reflected immediately in the other.
+        </li>
+      </ul>
+
+      <h2>Settings &amp; history</h2>
+      <ul>
+        <li>Choose light or dark appearance.</li>
+        <li>
+          Set defaults for word size, sign mode, and copy format on launch.
+        </li>
+        <li>
+          Review a local history of past calculator and bitwise operations
+          (stored on your device, capped at 300 entries per category).
+        </li>
+        <li>
+          Reset the app to clear session state, preferences, and history.
+        </li>
+      </ul>
+
+      <h2>Over-the-air (OTA) updates</h2>
+      <p>
+        Radixel uses a <strong>self-hosted JavaScript update channel</strong>
+        powered by <a href="https://docs.expo.dev/versions/latest/sdk/updates/">Expo Updates</a>.
+        This is <em>not</em> Expo Application Services (EAS) Update. Updates are
+        published to this GitHub Pages CDN and checked when you open the app
+        while online. Only the JavaScript layer of the app may be updated this
+        way; native permissions and store-distributed binaries are unchanged
+        until you install a new version from the App Store or Google Play.
+      </p>
+      <p>
+        For full details on what is collected during update checks, see our
+        <a href="./privacy.html">Privacy Policy</a>.
+      </p>
+
+      <h2>Publisher</h2>
+      <p>
+        Radixel is developed by
+        <a href="https://astrax.dev/">AstraX</a>, an India-first AI and
+        engineering community focused on practical systems and open
+        collaboration.
+      </p>
+      <ul>
+        <li>
+          Company website:
+          <a href="https://astrax.dev/">https://astrax.dev/</a>
+        </li>
+        <li>
+          Email:
+          <a href="mailto:hello@astrax.dev">hello@astrax.dev</a>
+        </li>
+        <li>Android package: <code>com.astrax.radixel</code></li>
+        <li>iOS bundle ID: <code>com.astrax.radixel</code></li>
+        <li>Current app version: <code>1.0.0</code></li>
+      </ul>
+      <p>
+        You can also reach AstraX on
+        <a href="https://wa.me/message/XA6OOWKHKDDSJ1">WhatsApp</a>,
+        <a href="https://1ax.in/astraxfb">Facebook</a>, or
+        <a href="https://1ax.in/astraxinsta">Instagram</a>.
+      </p>
+    </main>
+
+    <footer>
+      <div>Radixel v1.0.0 · By AstraX</div>
+      <nav class="nav-links" aria-label="Related pages">
+        <a href="https://astrax.dev/">AstraX</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./index.html">OTA CDN home</a>
+        <a href="https://github.com/Ax108/radixel">Source repository</a>
+      </nav>
+    </footer>
+  </body>
+</html>
