@@ -1,0 +1,131 @@
+{
+  "id": "14478212-0d2b-4e0f-92eb-9ee7633bb25d",
+  "createdAt": "2026-08-22T14:02:22.595Z",
+  "runtimeVersion": "1.0.0",
+  "launchAsset": {
+    "key": "bundle",
+    "contentType": "application/javascript",
+    "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/bundles/index-f8efe81813f75f1658bd9717059fc6ea.hbc",
+    "hash": "8hT1WKiFmnGIytZO0DRw-lb9k56WuldIFs7trN56QYY"
+  },
+  "assets": [
+    {
+      "key": "55b1e2f5b63afc9a104ac90322c4c189",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/7d40544b395c5949f4646f5e150fe020",
+      "hash": "LN_rjlzN55dvcBL7jM5zryIpAp7iHU8VCf7RFIccbNg"
+    },
+    {
+      "key": "02a0f3b416019ea10559192761082e4e",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/a132ecc4ba5c1517ff83c0fb321bc7fc",
+      "hash": "K3RDqaWOksoRpXW9wRWYYVpX3eMFzYznDWAmBrMCzZg"
+    },
+    {
+      "key": "a1b7b74ff30ea5d22dc79d1502374831",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/0ea69b5077e7c4696db85dbcba75b0e1",
+      "hash": "Pd0Hc-0n4j0leJ8wFzGzrEVa2L5aonoKG4OPicbSciU"
+    },
+    {
+      "key": "a7f4d9ee712f42f651f4b6e2b288ef92",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/2d0a9133e39524f138be6d4db9f4851f",
+      "hash": "ku2BdqyMtENipfxqNwNiagAGrGt8snLumfWFAmLsBw4"
+    },
+    {
+      "key": "401109f84ce48097d777797a9a8f9d70",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/0a328cd9c1afd0afe8e3b1ec5165b1b4",
+      "hash": "mtuMXvypMuK3MrKT2oE70uMZUiYwVrzp4lF_7A8LanY"
+    },
+    {
+      "key": "ab284ee0c76b11ea1437a3bfd574f56e",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/3cd68ccdb8938e3711da2e8831b85493",
+      "hash": "yGu0he7mh-BsUA_EI09RpnhLRTDCrhHQx2SBEQvOMQU"
+    },
+    {
+      "key": "3473fb2c444e8aae17ada911484952ac",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/61ca7e64b7d605716c57706cef640b9a",
+      "hash": "0Dpc16Zu8QxRR5FvnVh4stCgpa1G9AWjHNmWfvqlWv0"
+    },
+    {
+      "key": "a8f2bfabacf14a00e83b826ca37ac3a6",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/aff2c65b39a296d4f7e96d0f58169170",
+      "hash": "q1YT0s5w-mfFkm6DE1NmSUUZn8GV-m_nbF_jzsRS4xo"
+    },
+    {
+      "key": "bfd5e5401569736d3343b27a25d14736",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/d8e7601e3df962f83c62371ac14964d8",
+      "hash": "xOVOagp95jaqFTN4-8YupKQWlb_t-Af5Dfexj_1zP2c"
+    },
+    {
+      "key": "ec2f131826b2f574459a733c1cdd9247",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/0747a1317bbe9c6fc340b889ef8ab3ae",
+      "hash": "IyXFOnPlTEOMu8YN_92LUT1HG6QuL1ZxPvQEuV4Mofw"
+    },
+    {
+      "key": "c3bd1d6346e133ee18f9fd45f5871211",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/d84e297c3b3e49a614248143d53e40ca",
+      "hash": "sbwYEMoj4sOM12lxxDWR1yYWEGEkDYt5KwV1cZbdtSg"
+    },
+    {
+      "key": "95e60f6bb6ba11f4ae66fbb03ac47892",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/1190ab078c57159f4245a328118fcd9a",
+      "hash": "y9-SE-VfZcSNB2rNhCO3ya7k8bgRAf9slaOMTNioZGE"
+    },
+    {
+      "key": "dbe89edf126ed233a29b7df052d539cd",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/78c625386b4d0690b421eb0fc78f7b9c",
+      "hash": "0FydMNefRaeOVYWi5-xnxqBqiD3ZE34dUFnoyHszznY"
+    },
+    {
+      "key": "02782ae0afb371b9bc8e6a7aeee9b71e",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/dad2fa9f4394a630f0f9a0d6dabd44bc",
+      "hash": "3Fa5dr1FY44RJfZol0NSXmiGrgvvLI9GUZlIM2hagx8"
+    },
+    {
+      "key": "05bea7f4490d3dae5a64b25dcb511b2b",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/f3a81967828232c893d547162e922764",
+      "hash": "7xP8DfxS7COBdYX9fhCfvfWTo7JUnEDOcaybDtoSzCw"
+    },
+    {
+      "key": "5a87345af8cf89a97da1776a24557583",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/d62ddc38b69aff346c20a28774933d6a",
+      "hash": "tDSnzxjC1M50fHCULqL-4tRBLZOWftkrNy-BC7kmHqU"
+    },
+    {
+      "key": "cf11106cf5b176d2264734c047e4df59",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/a42e7ffc1039d5778753bbd0b00492be",
+      "hash": "nc1ts14Q3ygUZtoj6C10aSg6ykP8it2D8Ieu1gQlbtY"
+    },
+    {
+      "key": "0bd6ae93f76dda1d22b217bf62e1a05b",
+      "contentType": "application/octet-stream",
+      "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/assets/assets/cfb15443a0748c0df8d8ecd5217428f2",
+      "hash": "4WGnc5i9VA5IK5FFchT20j9DA6KfNegdvRrQRYPWQZs"
+    }
+  ],
+  "metadata": {
+    "channel": "production",
+    "platform": "ios"
+  },
+  "extra": {
+    "radixel": {
+      "host": "radixel-ota",
+      "path": "ios/1.0.0"
+    }
+  }
+}
