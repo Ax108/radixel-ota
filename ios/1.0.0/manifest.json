@@ -1,12 +1,12 @@
 {
-  "id": "14478212-0d2b-4e0f-92eb-9ee7633bb25d",
-  "createdAt": "2026-08-22T14:02:22.595Z",
+  "id": "f55638e0-6ec4-4215-9a79-9c98e1c9a234",
+  "createdAt": "2026-08-22T14:06:02.623Z",
   "runtimeVersion": "1.0.0",
   "launchAsset": {
     "key": "bundle",
     "contentType": "application/javascript",
     "url": "https://ax108.github.io/radixel-ota/ios/1.0.0/bundles/index-f8efe81813f75f1658bd9717059fc6ea.hbc",
-    "hash": "8hT1WKiFmnGIytZO0DRw-lb9k56WuldIFs7trN56QYY"
+    "hash": "ZybWLrwxlhzFjQHxlJaAR1IroJ4-pJrvDn146UqHjFU"
   },
   "assets": [
     {

@@ -1,12 +1,12 @@
 {
-  "id": "19499ad6-745e-4af9-8fb5-930cff307798",
-  "createdAt": "2026-08-22T14:02:06.160Z",
+  "id": "9084bd79-aab8-4ea1-8128-551a6d91dabd",
+  "createdAt": "2026-08-22T14:05:53.496Z",
   "runtimeVersion": "1.0.0",
   "launchAsset": {
     "key": "bundle",
     "contentType": "application/javascript",
     "url": "https://ax108.github.io/radixel-ota/android/1.0.0/bundles/index-16e6e5b3996487f723eba0aeb87e1aa6.hbc",
-    "hash": "PkxcuNtQZoCUb5tMUmvK9R3_2zw2j3WUpE5Tp0VtI1E"
+    "hash": "qU69gOJ6EJgzF6nXxd52TRMU2D-7SiY69_CxWROcraA"
   },
   "assets": [
     {
